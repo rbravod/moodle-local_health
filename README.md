@@ -2,7 +2,7 @@
 
 `local_health` is a Moodle local plugin that will provide a platform-independent HTTP API for reporting the operational state of a Moodle instance.
 
-The initial implementation supports Moodle 5.1 through 5.3. The plugin is currently an alpha scaffold and exposes no endpoints yet.
+The initial implementation supports Moodle 5.1 through 5.3. The plugin is currently alpha and exposes the liveness endpoint; readiness, aggregated health, and information endpoints are not implemented yet.
 
 ## Installation for development
 

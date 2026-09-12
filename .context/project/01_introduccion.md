@@ -17,6 +17,12 @@ El plugin utilizará el grupo de rutas `api` de Moodle. La versión inicial cont
 
 No se definirán rutas HTTP directas bajo `/local/health/`.
 
+## Contrato de liveness
+
+`GET /api/rest/v2/local_health/live` responde `200 OK` con `Content-Type: application/json`, `Cache-Control: no-store` y el cuerpo `{"status":"UP"}`.
+
+La ruta no acepta parámetros, no requiere autenticación ni sesión, y no ejecuta probes ni consultas a dependencias de Moodle. Un fallo de base de datos, caché u otro servicio externo corresponde a `ready`, no a `live`.
+
 ## Modelo de probes
 
 El núcleo descubrirá, ejecutará y agregará probes registradas por extensiones. Una probe evalúa una capacidad concreta de la instalación y devuelve un resultado estructurado.

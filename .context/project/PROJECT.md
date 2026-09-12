@@ -18,4 +18,5 @@ Quedan fuera del alcance la persistencia histórica de resultados, métricas tem
 - `adr/ADR-0001-naturaleza_proyecto.md`: naturaleza, límites y terminología del proyecto.
 - `adr/ADR-0002.md`: propuesta de independencia entre probes.
 - `adr/ADR-0003.md`: evaluación de atributos PHP para el descubrimiento de probes.
+- `adr/ADR-0004.md`: contrato HTTP del endpoint de liveness.
 - `02_planificacion.md`: secuencia inicial de implementación.
